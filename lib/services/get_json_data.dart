@@ -10,16 +10,18 @@ class GetJsonData {
     return await rootBundle.loadString('lib/data/data.json');
   }
 
-  static Future<List<Filtro>> loadFiltros() async {
+  static Future<List<Filtro>> loadData() async {
     String jsonString = await _loadFromAsset();
     final jsonResponse = jsonDecode(jsonString);
     List<Filtro> filtroList = List();
     jsonResponse.forEach((key, array) {
       final filtro = Filtro(
-        nombre: key
+        nombre: key,
+        productos: List<Producto>.from(array.map((x) => Producto.fromJson(x)))
       );
       filtroList.add(filtro);
     });
+    filtroList.insert(0, Filtro(nombre: 'todos'));
     return filtroList;
   }
 }

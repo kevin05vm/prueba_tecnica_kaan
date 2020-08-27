@@ -14,7 +14,7 @@ class SearchBar extends StatelessWidget {
         borderRadius: BorderRadius.circular(15.0),
       ),
       child: Container(
-        margin: EdgeInsets.only(left: 14.0, top: 4.0),
+        margin: const EdgeInsets.only(left: 14.0, top: 4.0),
         child: TextField(
           decoration: InputDecoration(
             border: InputBorder.none,
@@ -25,7 +25,7 @@ class SearchBar extends StatelessWidget {
               onTap: () => FocusScope.of(context).unfocus()
             )
           )
-        ),
+        )
       )
     );
   }

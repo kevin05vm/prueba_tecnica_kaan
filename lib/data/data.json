@@ -1,13 +1,13 @@
 {
     "salads": [
         {
-            "name": "caesar",
+            "name": "Caesar",
             "description": "Chop together anchovy fillets, garlic, and pinch of salt lorem lorem lorem lorem lorem lorem lorem",
             "price": "80",
             "image": "caesar-salad.png"
         },
         {
-            "name": "greek",
+            "name": "Greek",
             "description": "Spicy roasted chicken, smoked mozzarella, fire-roasted peppers, baby sunblush tomatoes & spinach on a smoky romesco pepper & tomato sauce base. Crust style: original or crispy thin. Crust toppers: garlic butter, parmesan cheese, or roman seasoning",
             "price": "100",
             "image": "greek-salad.png"

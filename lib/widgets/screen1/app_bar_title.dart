@@ -9,15 +9,15 @@ class AppBarTitle extends StatelessWidget {
     return Row(
       children: <Widget>[
         Container(
-          height: 50.0,
-          width: 50.0,
+          height: 40.0,
+          width: 40.0,
           decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.centerLeft,
               end: Alignment.bottomRight,
               colors: [ColorsConst.AMARILLO, ColorsConst.ROSA]
             ),
-            borderRadius: BorderRadius.circular(18.0)
+            borderRadius: BorderRadius.circular(13.0)
           ),
           child: Image.asset('lib/assets/icons/back.png')
         ),

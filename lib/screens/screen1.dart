@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'package:provider/provider.dart';
+
+import '../providers/filtro_provider.dart';
+
 import '../widgets/screen1/app_bar_title.dart';
 import '../widgets/screen1/search_bar.dart';
 import '../widgets/screen1/panel_categorias.dart';
@@ -22,14 +26,20 @@ class Screen1 extends StatelessWidget {
         elevation: 0.0,
         brightness: Brightness.light
       ),
-      body: Column(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),
-            child: SearchBar()
-          ),
-          PanelCategorias()
-        ]
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),
+              child: SearchBar()
+            ),
+            ChangeNotifierProvider(
+              create: (_) => FiltroProvider(),
+              child: PanelCategorias()
+            )
+          ]
+        )
       )
     );
   }
