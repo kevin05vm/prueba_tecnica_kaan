@@ -16,29 +16,30 @@ class Screen1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarIconBrightness: Brightness.dark
+      statusBarIconBrightness: Brightness.light,
+      statusBarColor: ColorsConst.BACKGROUND_SCREEN_1
     ));
-    return Scaffold(
-      backgroundColor: ColorsConst.BACKGROUND_SCREEN_1,
-      appBar: AppBar(
-        title: AppBarTitle(),
+    return ChangeNotifierProvider(
+      create: (_) => FiltroProvider(),
+      child: Scaffold(
         backgroundColor: ColorsConst.BACKGROUND_SCREEN_1,
-        elevation: 0.0,
-        brightness: Brightness.light
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          mainAxisSize: MainAxisSize.max,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),
-              child: SearchBar()
-            ),
-            ChangeNotifierProvider(
-              create: (_) => FiltroProvider(),
-              child: PanelCategorias()
-            )
-          ]
+        appBar: AppBar(
+          title: AppBarTitle(),
+          backgroundColor: ColorsConst.BACKGROUND_SCREEN_1,
+          elevation: 0.0,
+          brightness: Brightness.light
+        ),
+        body: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
+          child: Column(
+            children: <Widget>[
+               Padding(
+                padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),
+                child: SearchBar()
+              ),
+              PanelCategorias()
+            ]
+          )
         )
       )
     );

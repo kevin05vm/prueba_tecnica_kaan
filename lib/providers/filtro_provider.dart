@@ -8,7 +8,6 @@ class FiltroProvider with ChangeNotifier {
   int _index = 0;
 
   List<Filtro> _filtroList = List();
-
   List<Producto> _productsList = List();
 
   int get index => this._index;
@@ -38,10 +37,11 @@ class FiltroProvider with ChangeNotifier {
 
   getProducts() {
     productsList.clear();
-    (index == 0) ? filtroList.forEach((value) {
+    (index == 0) 
+    ? filtroList.forEach((value) {
       if(value.productos != null) 
         productsList.addAll(value.productos);
-    })
+    }) 
     : productsList.addAll(filtroList[index].productos);
   }
 

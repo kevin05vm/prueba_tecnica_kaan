@@ -14,7 +14,6 @@ class Filtro {
     this.productos
   });
 
-
   factory Filtro.fromJson(Map<String, dynamic> json) => Filtro(
     nombre: json['nombre'],
     productos: List<Producto>.from(json['productos'].map((x) => Producto.fromJson(x)))
