@@ -1,6 +1,14 @@
 # prueba_tecnica_kaan
 
-A new Flutter project.
+Proyecto de prueba técnica en Flutter para Kaan Technologies
+
+Pantalla 1:
+![alt text](https://res.cloudinary.com/monkeydevelop/image/upload/v1598510680/t5kilmida98c5yhobsbd.png)
+
+Pantalla 2:
+![alt text](https://res.cloudinary.com/monkeydevelop/image/upload/v1598510675/mfet50su1jlddohdebap.png)
+
+
 
 ## Getting Started
 
