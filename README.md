@@ -3,10 +3,12 @@
 Proyecto de prueba técnica en Flutter para Kaan Technologies
 
 Pantalla 1:
-![alt text](https://res.cloudinary.com/monkeydevelop/image/upload/v1598510680/t5kilmida98c5yhobsbd.png =323x699)
+<img src="https://res.cloudinary.com/monkeydevelop/image/upload/v1598510680/t5kilmida98c5yhobsbd.png" width="323" height="699">
+(https://res.cloudinary.com/monkeydevelop/image/upload/v1598510680/t5kilmida98c5yhobsbd.png)
 
 Pantalla 2:
-![alt text](https://res.cloudinary.com/monkeydevelop/image/upload/v1598510675/mfet50su1jlddohdebap.png =323x699)
+<img src="https://res.cloudinary.com/monkeydevelop/image/upload/v1598510675/mfet50su1jlddohdebap.pn" width="323" height="699">
+(https://res.cloudinary.com/monkeydevelop/image/upload/v1598510675/mfet50su1jlddohdebap.png)
 
 
 
